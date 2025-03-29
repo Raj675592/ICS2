@@ -119,6 +119,9 @@ nav a:hover::after {
     max-width: 600px;
 }
 
+#log{
+    border-radius: 50%;
+}
 #about {
     padding: 5rem 2rem;
     max-width: 1200px;
