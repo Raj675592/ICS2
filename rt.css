@@ -1,0 +1,346 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Typography */
+body {
+    font-family: Arial, sans-serif;
+    color: #4A3B30;
+    background-color: #FFF;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Logo Styling */
+.logo {
+    height: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    background: linear-gradient(135deg, #5403f5, #f14a03, #ff7e5f);
+    align-items: center;
+    justify-content: flex-end;
+    height: 100px;
+    color: #0804f7;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul img.logo {
+    margin-right: 5px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0a0a0a;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0056b3;
+}
+
+/* Link Styles */
+a {
+    color: rgb(235, 9, 9);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* Main Heading */
+#h1 {
+    font-size: 50px;
+    margin: 20px 0;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: inherit;
+}
+
+/* About Section */
+#about {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: rgb(12, 12, 12);
+    padding-top: 40px;
+    border-style: ridge;
+    border-color: #f6f6fa;
+    margin: 50px;
+}
+
+/* Typography Elements */
+h1 {
+    color: #4A3B30;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Section Header Styling */
+.section-header {
+    font-size: 34px;
+    font-weight: bold;
+    color: #7A6A58;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.header-title {
+    font-size: 36px;
+    margin-top: 10px;
+    color: #4A3B30;
+}
+
+.benefit-title {
+    font-size: 36px;
+    margin-top: 10px;
+    color: #4A3B30;
+}
+
+/* Benefit Items */
+.benefit-item {
+    margin: 20px 0;
+}
+
+.benefit-item h3 {
+    display: inline;
+    font-size: 20px;
+    color: #4A3B30;
+}
+
+.benefit-icon {
+    margin-right: 10px;
+}
+
+/* Horizontal Rule */
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 40px 0;
+}
+
+/* Button Styles */
+button {
+    margin: 30px;
+    height: 50px;
+    background: linear-gradient(135deg, #1404fa, #f72804);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #4A3B30;
+    color: white;
+    transform: scale(1.05);
+}
+
+.explore-btn {
+    margin-top: 20px;
+    background-color: transparent;
+    border: 2px solid #4A3B30;
+    color: #4A3B30;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.explore-btn:hover {
+    background-color: #ee6b0c;
+    color: white;
+}
+
+/* Priority Section */
+#prio {
+    margin: 50px;
+}
+
+/* Image Styling */
+.img1 {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.img1:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Works Section */
+.works {
+    font-size: 34px;
+    font-weight: bold;
+    color: #7A6A58;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.description {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+/* Services Grid */
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.service-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+.service-card h3 {
+    margin-top: 0;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #7A6A58;
+    margin-bottom: 16px;
+}
+
+.read-more {
+    font-weight: bold;
+    color: #4A3B30;
+    cursor: pointer;
+}
+
+/* Special Text Elements */
+#x {
+    text-align: center;
+    margin: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 500px;
+    color: rgb(11, 7, 245);
+}
+
+#xy {
+    position: absolute;
+    top: 550px;
+    color: rgb(25, 0, 245);
+    text-align: center;
+    font-size: 40px;
+    align-items: center;
+}
+
+/* Footer */
+footer {
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #eee;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    #h1 {
+        font-size: 40px;
+    }
+    
+    nav {
+        height: auto;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    
+    .logo {
+        height: 80px;
+    }
+    
+    #x, #xy {
+        position: static;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .services {
+        grid-template-columns: 1fr;
+    }
+    
+    button {
+        margin: 15px;
+        height: 45px;
+    }
+    
+    #about {
+        margin: 20px;
+    }
+    
+    #prio {
+        margin: 20px;
+    }
+}
