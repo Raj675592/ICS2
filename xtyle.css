@@ -1,0 +1,211 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4edf9 100%);
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 25px 0;
+    background: linear-gradient(135deg, #003366 0%, #0059b3 100%);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  h1 {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  h2 {
+    font-size: clamp(1.4rem, 4vw, 1.8rem);
+    margin-bottom: 25px;
+    color: #003366;
+    text-align: center;
+  }
+  
+  /* Testimonials Container */
+  #testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin: 0 auto 50px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+  }
+  
+  /* Individual Testimonial Styles */
+  .testimonial {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  }
+  
+  .testimonial .name {
+    font-weight: 600;
+    color: #003366;
+    margin-bottom: 12px;
+    font-size: 1.25rem;
+  }
+  
+  .testimonial .message {
+    font-style: italic;
+    line-height: 1.6;
+    flex-grow: 1;
+  }
+  
+  .testimonial .date {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #777;
+    text-align: right;
+  }
+  
+  /* Form Styles */
+  #testimonial-form {
+    max-width: 650px;
+    margin: 0 auto 50px;
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 22px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: #003366;
+    box-shadow: 0 0 0 2px rgba(0, 51, 102, 0.2);
+  }
+  
+  textarea {
+    min-height: 180px;
+    resize: vertical;
+  }
+  
+  button {
+    background: linear-gradient(135deg, #003366 0%, #0059b3 100%);
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 0 auto;
+    min-width: 150px;
+  }
+  
+  button:hover {
+    background: linear-gradient(135deg, #004080 0%, #0066cc 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 51, 102, 0.25);
+  }
+  
+  button:active {
+    transform: translateY(0);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 991px) {
+    #testimonials-container {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      padding: 15px;
+    }
+    
+    header {
+      padding: 20px 0;
+      margin-bottom: 30px;
+    }
+    
+    #testimonials-container {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    #testimonial-form {
+      padding: 25px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    #testimonials-container {
+      grid-template-columns: 1fr;
+    }
+    
+    .testimonial {
+      padding: 20px;
+    }
+    
+    #testimonial-form {
+      padding: 20px;
+    }
+    
+    input, textarea, button {
+      padding: 12px;
+      margin-bottom: 16px;
+    }
+  }
+  
+  /* Animation for new testimonials */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .new-testimonial {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
