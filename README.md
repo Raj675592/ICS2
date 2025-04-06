@@ -3,8 +3,7 @@
 
 ## Overview
 This is the official website for the **IIT Kanpur Counselling Service**, designed to provide a platform for students, faculty, and staff to seek mental health support, schedule counseling sessions, and access valuable resources.
-## NOTE: 
-## Only MTH111 Course is now completely accessible. Don't try to open other course. 
+## NOTE: Only MTH111 Course is now completely accessible. Don't try to open other course. 
 
 ## Features
 - **Homepage:** Introduction to the IITK Counselling Service.
