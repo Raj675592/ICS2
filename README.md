@@ -38,8 +38,7 @@ This website uses **Google Sheets API** to store appointment requests.
 
 
 
+## Author : Rajkumar Ahirwar
 
-
-## License
-This project is licensed under the MIT License. Feel free to use and contribute!
+## &copy; 2025-26 ICS IIT KANPUR
 
