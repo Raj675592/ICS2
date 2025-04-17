@@ -31,7 +31,7 @@ This is the official website for the **IIT Kanpur Counselling Service**, designe
 3. Open `index.html` in a browser to view the website.
 
 ## Appointment Booking Setup
-This website uses **Google Sheets API** to store appointment requests.
+This website uses **MONGODB ATLALS** to store appointment requests.
 
 
 
