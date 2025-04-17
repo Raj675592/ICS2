@@ -16,7 +16,7 @@ This is the official website for the **IIT Kanpur Counselling Service**, designe
 
 ## Technologies Used
 - **Frontend:** HTML, CSS, JavaScript
-- **Backend:** Google Sheets API for appointment booking
+- **Backend:** MONGODB ATLAS for appointment booking
 - **Deployment:** GitHub Pages / Netlify / Vercel (to be determined)
 
 ## How to Use
